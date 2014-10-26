@@ -1,7 +1,7 @@
 {
   "author": "Chase Fleming <chaseefleming@gmail.com>",
-  "name": "moment-interpreter",
-  "version": "0.1.1",
+  "name": "moment-interpret",
+  "version": "0.1.2",
   "description": "An intepreter built on top of MomentJS",
   "homepage": "https://github.com/chasefleming/moment-interpret",
   "keywords": [

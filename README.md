@@ -1,5 +1,6 @@
 # Moment Interpret
 ## An intepreter built on top of MomentJS
+### Parse written text for dates and times.
 
 ```
 npm install moment-interpret
