@@ -37,43 +37,31 @@ function respond (input) {
 
 function checkType (input) {
 
+  var types,
+      matchedType;
 
-  if (input.indexOf('years') !== -1) {
-    return 'years';
-  }
-  else if (input.indexOf('year') !== -1) {
-    return 'year';
-  }
-  else if (input.indexOf('months') !== -1) {
-    return 'months';
-  }
-  else if (input.indexOf('month') !== -1) {
-    return 'month';
-  }
-  else if (input.indexOf('days') !== -1) {
-    return 'days';
-  }
-  else if (input.indexOf('day') !== -1) {
-    return 'day';
-  }
-  else if (input.indexOf('hours') !== -1) {
-    return 'hours';
-  }
-  else if (input.indexOf('hour') !== -1) {
-    return 'hour';
-  }
-  else if (input.indexOf('minutes') !== -1) {
-    return 'minutes';
-  }
-  else if (input.indexOf('minute') !== -1) {
-    return 'minute';
-  }
-  else if (input.indexOf('seconds') !== -1) {
-    return 'seconds';
-  }
-  else if (input.indexOf('second') !== -1) {
-    return 'second';
-  }
+  types = [
+    'years',
+    'year',
+    'months',
+    'month',
+    'days',
+    'day',
+    'hours',
+    'hour',
+    'minutes',
+    'minute',
+    'seconds',
+    'second'
+  ];
+
+  _(types).each(function (type) {
+    if (input.indexOf(type) !== -1) {
+      matchedType = type;
+    }
+  });
+
+  return matchedType;
 
 }
 
