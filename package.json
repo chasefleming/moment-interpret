@@ -1,0 +1,32 @@
+{
+  "author": "Chase Fleming <chaseefleming@gmail.com>",
+  "name": "moment-interpreter",
+  "version": "0.1.1",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+    "hacker",
+    "news",
+    "api",
+    "wrapper"
+  ],
+  "scripts": {
+    "test": "mocha -R spec -t 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "index",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "moment": "^2.8.3"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  }
+}
