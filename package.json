@@ -2,20 +2,22 @@
   "author": "Chase Fleming <chaseefleming@gmail.com>",
   "name": "moment-interpreter",
   "version": "0.1.1",
-  "description": "",
-  "homepage": "",
+  "description": "An intepreter built on top of MomentJS",
+  "homepage": "https://github.com/chasefleming/moment-interpret",
   "keywords": [
-    "hacker",
-    "news",
-    "api",
-    "wrapper"
+    "momentjs",
+    "moment",
+    "time",
+    "date",
+    "datetime",
+    "interpreter"
   ],
   "scripts": {
     "test": "mocha -R spec -t 5000"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/chasefleming/moment-interpret"
   },
   "main": "index",
   "dependencies": {
