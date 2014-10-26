@@ -26,6 +26,11 @@ function respond (input) {
     dateTime = moment().subtract(length, type);
 
   }
+  else if (formattedInput.indexOf('from now')) {
+
+    dateTime = moment().add(length, type);
+
+  }
 
   return dateTime;
 }
@@ -244,3 +249,9 @@ numbers = [
 ];
 
 module.exports = respond;
+
+
+// var blah = respond('3 years from now').format('YYYY-MM-DD');
+// console.log('asdf', blah);
+// var expectedDate = moment().add(3, 'years').format('YYYY-MM-DD');
+// console.log('asdfasdf', expectedDate);
