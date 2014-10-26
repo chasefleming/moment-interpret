@@ -32,7 +32,14 @@ function respond (input) {
 
 function checkType (input) {
 
-  if (input.indexOf('months') !== -1) {
+
+  if (input.indexOf('years') !== -1) {
+    return 'years';
+  }
+  else if (input.indexOf('year') !== -1) {
+    return 'year';
+  }
+  else if (input.indexOf('months') !== -1) {
     return 'months';
   }
   else if (input.indexOf('month') !== -1) {
@@ -100,8 +107,8 @@ function convertToNumber (input) {
 
 function joinNumbers (numbersArray) {
 
-  // TODO: need to account for things like 50 and 4 joining
-  // but can't remove 0 all the time, b/c what about 10000 (ten thousand)?
+  // TODO: need to make numbers 100 or greater work
+  // right now, zero is being removed (e.g. 50 && 4 for 54), but it can't be removed all the time, b/c what about 10000 (ten thousand)?
   // 200000 two hundred thousand
   // 5004 five thousand four || five thousand and four (remove filler words like 'and'?)
 

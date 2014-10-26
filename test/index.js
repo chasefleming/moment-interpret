@@ -5,6 +5,42 @@ var should = require('chai').should(),
 
 describe('...ago', function () {
 
+  describe('year/s', function () {
+
+    describe('...years...', function () {
+
+      it('should calculate years ago with integer', function () {
+        var time = interpret('3 years ago').format(); // should not care about caps
+        var expectedDate = moment().subtract(3, 'years').format();
+        time.should.equal(expectedDate);
+      });
+
+      it('should calculate years ago with word', function () {
+        var time = interpret('three years ago').format();
+        var expectedDate = moment().subtract(3, 'years').format();
+        time.should.equal(expectedDate);
+      });
+
+    });
+
+    describe('...year...', function () {
+
+      it('should calculate year ago with integer', function () {
+        var time = interpret('1 year ago').format(); // should not care about caps
+        var expectedDate = moment().subtract(1, 'year').format();
+        time.should.equal(expectedDate);
+      });
+
+      it('should calculate year ago with word', function () {
+        var time = interpret('one year ago').format();
+        var expectedDate = moment().subtract(1, 'year').format();
+        time.should.equal(expectedDate);
+      });
+
+    });
+
+  });
+
   describe('month/s', function () {
 
     describe('...months...', function () {
