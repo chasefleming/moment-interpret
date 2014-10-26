@@ -26,7 +26,7 @@ function respond (input) {
     dateTime = moment().subtract(length, type);
 
   }
-  else if (formattedInput.indexOf('from now')) {
+  else if (formattedInput.indexOf('from now') !== -1) {
 
     dateTime = moment().add(length, type);
 
