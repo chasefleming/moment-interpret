@@ -249,9 +249,3 @@ numbers = [
 ];
 
 module.exports = respond;
-
-
-// var blah = respond('3 years from now').format('YYYY-MM-DD');
-// console.log('asdf', blah);
-// var expectedDate = moment().add(3, 'years').format('YYYY-MM-DD');
-// console.log('asdfasdf', expectedDate);
